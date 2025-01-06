@@ -1,0 +1,21 @@
+{
+  "prog.predictor": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Using the provided SMILES code and the description of functional groups, compute the topological surface area (TPSA) for the molecule. Provide a text summary in the field `contributor_description` detailing the contributions of each group to the TPSA value, and always end with a list of numbers in `tpsa_numbers_list` showing how each group contributes to the total TPSA. Use the contribution values from the specified table for each type of functional group present, treating multiple occurrences additively. Ensure that the response is formatted as a single JSON object.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "smiles code for a molecule to be analyzed for predicting TPSA "
+        },
+        {
+          "prefix": "Answer:",
+          "description": "A text summary for how each identified group effects the TPSA value that MUST be followed by a list of numerical values (floats). Even if there is only a single value to return it must be a list. "
+        }
+      ]
+    }
+  }
+}
