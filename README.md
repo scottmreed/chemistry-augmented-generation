@@ -23,6 +23,7 @@ This repository contains tools and code to replicate the research presented in t
 ### Requirements
 - Python 3.12
 - [RDKit](https://www.rdkit.org/) for molecular data handling.
+- [DSPy](https://github.com/stanfordnlp/dspy) for MIPROv2
 - OpenAI API access for LLM predictions.
 
 ### Setup
