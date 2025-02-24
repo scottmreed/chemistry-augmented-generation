@@ -4,6 +4,7 @@ import time
 import random
 import os
 from rdkit import Chem
+import matplotlib.pyplot as plt
 
 
 file_path = os.path.join('tpsa_saved_data', 'tpsa_smarts.csv')
@@ -275,7 +276,7 @@ def fetch_pubchem_properties(cids, chunk_size=10):
     for i in range(0, len(cids), chunk_size):
         cid_chunk = cids[i:i + chunk_size]
         cid_list = ",".join(map(str, cid_chunk))  # Create comma-separated list of CIDs
-        property_url_chunk = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid_list}/property/XLogP,ExactMass,Charge,HBondDonorCount,HBondAcceptorCount,TPSA,CanonicalSMILES/JSON"
+        property_url_chunk = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid_list}/property/XLogP,ExactMass,HBondDonorCount,HBondAcceptorCount,TPSA,CanonicalSMILES/JSON"
 
         response = requests.get(property_url_chunk)
         if response.status_code == 200:
@@ -290,54 +291,67 @@ def fetch_pubchem_properties(cids, chunk_size=10):
     return molecule_data
 
 
+def plot_tpsa_distribution(df, output_dir='tpsa_saved_data'):
+    """Plots the distribution of TPSA values and saves it."""
+    if 'TPSA' in df.columns and not df['TPSA'].isnull().all():
+        plt.figure(figsize=(8, 6))
+        plt.hist(df['TPSA'].dropna(), bins=20, edgecolor='black')
+        plt.xlabel('TPSA')
+        plt.ylabel('Frequency')
+        plt.title('Distribution of TPSA Values')
+        plt.grid(True)
+
+        os.makedirs(output_dir, exist_ok=True)
+        plot_path = os.path.join(output_dir, 'tpsa_distribution.png')
+        plt.savefig(plot_path)
+        plt.show()
+        print(f"TPSA distribution plot saved to {plot_path}")
+
 def main():
     # Define the highest CID value for reference
     cid_max = get_highest_cid(starting_cid=138960000, chunks=100)
 
-    bins = list(range(15, 75, 5))
-    bin_count_target = 20
+    data_list = []
+    num_molecules = 500  # Define target number of molecules
 
-    # Dictionary to track molecules in each bin
-    bin_counts = {bin_value: 0 for bin_value in bins}
-
-    molecule_data = []
-
-    while not all([count >= bin_count_target for count in bin_counts.values()]):
+    while len(data_list) < num_molecules:
         # Generate a random set of 100 CIDs
         random_cids = [random.randint(1, cid_max) for _ in range(100)]
 
         # Fetch properties using smaller GET chunks
         properties = fetch_pubchem_properties(random_cids, chunk_size=10)
 
-        # Filter out entries without a TPSA value
-        valid_properties = [prop for prop in properties if 'TPSA' in prop]
+        # Filter valid molecules
+        valid_properties = [prop for prop in properties if 'CanonicalSMILES' in prop]
+        print(f'valid_properties length is {len(valid_properties)}')
 
-        # Assign molecules to bins based on their TPSA values
         for prop in valid_properties:
-            tpsa_value = prop['TPSA']
-            # Determine the bin for this TPSA value
-            for bin_value in bins:
-                if bin_value <= tpsa_value < bin_value + 5:
-                    # Check if this bin is still below the target count
-                    if bin_counts[bin_value] < bin_count_target:
-                        if is_composed_of_CNO(prop['CanonicalSMILES']):
-                            group_check = describe_molecule(prop['CanonicalSMILES'], functional_group_list)
-                            if group_check:
-                                molecule_data.append(prop)  # Add molecule to the collection
-                                bin_counts[bin_value] += 1  # Increment bin count
-                                # Print update if bin is completed
-                                if bin_counts[bin_value] == bin_count_target:
-                                    print(
-                                        f"Bin {bin_value} to {bin_value + 5} completed with {bin_counts[bin_value]} molecules.")
-                    break  # Move to next molecule once assigned to a bin
+            smiles = prop['CanonicalSMILES']
+            if is_composed_of_CNO(smiles):
+                group_check = describe_molecule(smiles, functional_group_list)
+                if group_check:
+                    data_list.append(prop)
+                    if len(data_list) >= num_molecules:
+                        break
 
-    df_balanced = pd.DataFrame(molecule_data)
+    # Convert to DataFrame
+    df = pd.DataFrame(data_list)
+
+    # Apply Lipinski's Rule filters
+    df.drop(df.loc[df['HBondAcceptorCount'] > 10].index, inplace=True)
+    df.drop(df.loc[df['HBondDonorCount'] > 5].index, inplace=True)
+    df['ExactMass'] = pd.to_numeric(df['ExactMass'], errors='coerce')
+    df.drop(df.loc[df['ExactMass'] > 500].index, inplace=True)
+
+    # Save data
     output_dir = 'tpsa_saved_data'
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, 'filtered_lipinski_data.csv')
+    df.to_csv(output_path, index=False)
 
-    output_path = os.path.join(output_dir, 'balanced_tpsa_data.csv')
-    df_balanced.to_csv(output_path, index=False)
+    print(f"Filtered data saved to {output_path}")
 
-    print(f"Data saved to {output_path}")
+    plot_tpsa_distribution(df)
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,141 @@
+smiles,calculated,tpsa_model_abcdef_no_sig_pred,group_descriptions,num_n,num_o
+CC(C)CCN(C)C1=CC=C(O1)C(=O)C,33.5,56.3,"['Tertiary amine', 'Carbonyl group', 'Aromatic oxygen']",1,2
+C1CC2=NC3=NC(=NN3C=C2C(=O)C1)CC(=O)O,97.5,102.3,,4,3
+CN1CCN(C2=NC3=CC=CC=C3N=C21)C(=O)C4=CC=C(C=C4)OC5=CC=CC=C5,58.6,102.3,,4,2
+CN(C)C1=NC(=NC(=N1)N)COC2=CC=CC=C2OC,86.4,102.3,,5,2
+CC1(CC1)CC2=NN=C(N2N)N,82.8,62.3,,5,0
+CC1C(CCO1)CNC2=CC(=CC(=C2)OC(C)C)[N+](=O)[O-],76.3,85.7,,2,4
+CCN(CC)CCCCC1CCCCN1C=O,23.6,56.3,"['Tertiary amine', 'Tertiary amine', 'Carbonyl group']",2,1
+CCC1C(=O)NC2=C(OC=C2N1C)C(=O)O,82.8,85.3,,2,4
+COC1=C(C=C(C=C1)CN(CCN2CCCC2)C(=O)C=CC3=CC=CC=C3)OCC4=CC=CC=C4,42.0,102.3,"['Tertiary amine', 'Tertiary amine', 'Ether', 'Ether', 'Carbonyl group']",2,3
+CC=CCCCC=CCCCC=CCO,20.2,16.0,['Alcohol'],0,1
+CCCCC([N+](C)(CCCO)CC(=O)O)O,77.8,78.9,,1,4
+C1CNCC12CCN(CC2)C(=O)C3=COC(=N3)C4=CC=CC=C4,58.4,85.7,,3,2
+COC1(CN2CCC1CC2)C#CC(C3=CC=CC=C3)(C4=CC=CC=C4)OC,21.7,62.3,"['Tertiary amine', 'Ether', 'Ether']",1,2
+COC1C(CC(C(O1)(CO)C2=CC=CC=C2)O)N=[N+]=[N-],73.3,85.3,"['Ether', 'Alcohol', 'Alcohol']",3,4
+CN(C1CCCCC1)C(=O)C(=CC2=CC=C(C=C2)OC)C3=CC=CC=C3,29.5,85.7,"['Tertiary amine', 'Ether', 'Carbonyl group']",1,2
+CCCCCC(C1=CC=CC=C1)ON,35.3,36.2,['Primary amine'],1,1
+C1=CC=C2C3C4=CC=CC=C4C(C2=C1)C5=C3C=C(C(=C5)CO)CO,40.5,36.8,"['Alcohol', 'Alcohol']",0,2
+C1C2=C(CO1)C=C(C=C2)C3=NC(=CO3)C(=O)O,72.6,78.2,,1,4
+CCC1=CN=C(O1)CN2CC3(CCCC3)NCC2C,41.3,62.3,,3,1
+CC(CC(=O)CCC(=O)C)OCC=C,43.4,56.3,"['Ether', 'Carbonyl group', 'Carbonyl group']",0,3
+CCCN(C1=CC=CNC1=C(N)N=O)C(C)C,70.7,78.2,,4,1
+CC(=C1C2C(C2(C)C)CC1=O)N3CCN(CC3)C4=CC=CC=C4,23.6,56.7,"['Tertiary amine', 'Carbonyl group']",2,1
+CCCC=CCC=CCCCCCCCCO,20.2,18.0,['Alcohol'],0,1
+COC1=C(C2=CC=CC=C2C=C1C(=O)N)C(=O)O,89.6,75.3,,1,4
+CCNC1=NC(=NC(=C1)C)CN(CC)C2=CC=CC(=C2)C,41.1,62.3,,4,0
+COC1=C(C=C(C=C1)C2=CC3=C(C=C2)N=CN=C3C4=CC(=CC=C4)OC)OC,53.5,85.7,"['Ether', 'Ether', 'Ether', 'Aromatic nitrogen', 'Aromatic nitrogen']",2,3
+CC1(C2C(C2N3CCN(CC3)C4C5C4C(N(C5(C)C)OC)(C)C)C(N1OC)(C)C)C,31.4,102.3,,4,2
+COC1=CC(=C(C=C1)CNC2=C(C=C3CN(CC3=C2)CC4=C(C=C(C=C4)OC)OC)[N+](=O)[O-])OC,98.0,102.3,,3,6
+CCC1CCNC(C1)C2(CCC3=CC=CC=C3C2)O,32.3,56.7,"['Secondary amine', 'Alcohol']",1,1
+CC(C)(C)CC1CCCN1C(=O)NC2=CC(=C(C(=C2)OC)OC)OC,60.0,85.7,,2,4
+CCCNCCC(C)N(C)C1CCC(CC1)C,15.3,56.3,,2,0
+C1CC2C(CC1C2=O)C3=CC=C(C=C3)N,43.1,36.2,"['Carbonyl group', 'Primary amine']",1,1
+CCNC(CCC#C)C1=CC=CC=C1OCC,21.3,56.3,"['Tertiary amine', 'Ether', 'Secondary amine']",1,1
+CC1=C(C(=CC=C1)C)OCCN2CCC(C2)NC,24.5,62.3,,2,1
+C1C=C(N=NC2=CC=CC=C21)CC(=O)O,62.0,62.3,,2,2
+CCCN(CC)CC(=C1CNC1)C,15.3,36.2,,2,0
+CCCCCC1=CC=C(C=C1)C2=CC=C(C=C2)C#CC3=CC4=C(C=C3)C=C(C=C4)CCC,0.0,0.0,['No functional groups assigned.'],0,0
+CCCOC1=CC=CC(=C1)CNC2CCN3C2CCC3,24.5,56.3,"['Tertiary amine', 'Tertiary amine', 'Ether', 'Secondary amine']",2,1
+CC1CCC2C(=CCCC2(C)C(=O)O)C1(C)CCC(C)(C=C)O,57.5,36.8,,0,3
+CC1=CC(=CC(=C1)N(C)C2=CC=C(C=C2)C(C)O)C,23.5,72.3,['Alcohol'],1,1
+CCCCCC=CCC1C(O1)CCCCCCCC=O,29.6,24.3,"['Ether', 'Carbonyl group']",0,2
+CC(=O)CCCC(C(C=CC=CCCCC#CCCC1=CC=CC=C1)O)O,57.5,72.3,"['Carbonyl group', 'Alcohol', 'Alcohol']",0,3
+CC(=CCCC(=CCC1=C(C=CC(=C1)N)C(=O)O)C)C,63.3,62.3,,1,2
+COC1=CC=CC(=C1OC)C(C2=CC=CC=C2)(C3=CC=CC=C3)OCCCCCO,47.9,85.7,"['Ether', 'Ether', 'Ether', 'Alcohol']",0,4
+CC1(C(C(C(CN1)O)O)O)C(=O)O,110.0,85.0,,1,5
+CN(C)CCC1=C2CCCC2=CC3=C1CCC3,3.2,16.2,['Tertiary amine'],1,0
+CCCC1CCCN(CC1)C2=CC=CC=C2C(C)O,23.5,56.3,"['Tertiary amine', 'Alcohol']",1,1
+CCC1=C(C=C(C=C1)C(C)CO)C2=CC=C(C=C2)C(=O)CC,37.3,56.3,"['Carbonyl group', 'Alcohol']",0,2
+CC1=C(C2=C(C(OC2)O)C(=C1OC)C(=O)O)OCC=C(C)C,85.2,78.2,,0,6
+CC=C(CCN1CCCCC1)CN2CCNC2,18.5,56.3,,3,0
+CC12C(C(OC1C3=COC4=C3N=CN=C4N)CO)OCO2,113.0,82.3,"['Ether', 'Ether', 'Alcohol', 'Primary amine', 'Aromatic oxygen', 'Aromatic nitrogen', 'Aromatic nitrogen']",3,5
+CCCNC1=NC(=NC(=C1)CC)COCCC,47.0,62.3,,3,1
+C1C(C12CC2C(=O)O)CO,57.5,36.0,,0,3
+CCOC1=CC=CC=C1CNC(C)C2=CC=CC(=C2)CO,41.5,62.3,"['Tertiary amine', 'Ether', 'Secondary amine', 'Alcohol']",1,2
+C1CCC2C(C1)C3=CC4=C(C=C3C(O2)C5=CC6=C(C=C5)OC7=CC=CC=C76)OCO4,40.8,72.3,"['Ether', 'Ether', 'Aromatic oxygen']",0,4
+CCOC1=CC=CC=C1NC(=O)C2=CC(=C(C=C2C)OC)C(C)C,47.6,78.9,,1,3
+CC(C)C(=O)C=C(C1=CC=CO1)N,56.2,56.3,"['Carbonyl group', 'Primary amine', 'Aromatic oxygen']",1,2
+CC1=C2C(=CC=C1)C3=C(O2)C(=CC4=CC=CC=C43)C5=CC=C(C=C5)C6=CC7=CC=CC=C7C8=CC=CC=C86,13.1,62.3,['Aromatic oxygen'],0,1
+C1CCC(CC1)C(C(C2=CC=CC(=C2)C3CCC3)O)O,40.5,42.3,"['Alcohol', 'Alcohol']",0,2
+CCCC(CCCC1=CC=CC=C1)CO,20.2,32.1,['Alcohol'],0,1
+[CH2-][O+]=C=C,1.0,0.0,['Carbonyl group'],0,1
+CC1C=COC2=C1C3=CC=CC=C3C(=C2O)O,49.7,62.3,"['Alcohol', 'Alcohol']",0,3
+CC1=CC(=CC=C1)C2=NN3C(=CC(=NC3=N2)C)NC4=C(C=CC(=C4)C(=O)O)C,92.4,85.7,,5,2
+C1CN(CC2=CC=CC=C21)CCC(=O)C3=CC4=CC=CC=C4C=C3,20.3,56.7,"['Tertiary amine', 'Carbonyl group']",1,1
+CC(C)N(CCO)CC1CCCCCC1NC,35.5,66.2,,2,1
+CC1=C(C=C(C=C1)OCC2CC(OC(C2)(C)C)(C)C)[N+](=O)[O-],64.3,72.3,,1,4
+CC1CCC(=O)C(=C1CCCC(=O)O)C,54.4,56.3,,0,3
+C1C(CC(CC1C2=NN=CC=C2)C3=NN=CC=C3)C4=NN=CC=C4,77.3,85.0,"['Aromatic nitrogen', 'Aromatic nitrogen', 'Aromatic nitrogen']",6,0
+CCCCCC(C=CC1C(CC(=O)C1CCCC)O)O,57.5,62.3,"['Carbonyl group', 'Alcohol', 'Alcohol']",0,3
+CCC1CN(C(CN1)C)CCCC2CC2,15.3,36.8,"['Tertiary amine', 'Secondary amine']",2,0
+CCC(CC)(CNC1=CC=C(C=C1)N)O,58.3,56.3,"['Secondary amine', 'Alcohol', 'Primary amine']",2,1
+COC1=C(C=C(C=C1)C2=COC(=N2)N)O,81.5,62.3,,2,3
+C1C=C2CN(CC2C1=O)C(C3=CC=CC=C3)(C4=CC=CC=C4)C5=CC=CC=C5,20.3,56.7,"['Tertiary amine', 'Carbonyl group']",1,1
+CC(C)(C)NCCN1CCN(CC1)C2CCCC2,18.5,56.8,,3,0
+CCCC(C)(CN1CC(C(C1)N(C)C)C)C(=O)O,43.8,78.2,,2,2
+CC1CC2C(CC1C)C(C(C2(C)C)(C)C)(C)C,0.0,0.0,['No functional groups assigned.'],0,0
+CCC1=C(C=C(O1)C)C=CC(=O)O,50.4,68.2,,0,3
+CCCC1CCC(CC1)C2=CC(=C(C=C2)OC)C3=CC=CC=C3,9.2,25.7,['Ether'],0,1
+CCC1=C(N=NC(=N1)NCCC2CCCC2)CC,50.7,78.2,,4,0
+CCCCC(CC)C(C1=CC=C(C=C1)C)NC,12.0,36.8,"['Tertiary amine', 'Secondary amine']",1,0
+CC1=C(C=CC(=C1)C2=C(N3C=C(C=NC3=N2)OC)N)OC,74.7,72.3,,4,2
+C=CCCOC(C=C)O,29.5,36.2,"['Ether', 'Alcohol']",0,2
+CC1=NC=C(C(=N1)N(CC2=CC=CC=C2)CC3=CC=CC=C3)CN,55.0,85.7,,4,0
+CC1=C(N=CN=C1NC)C2=CC3=CC=CC=C3C=C2,37.8,72.3,"['Secondary amine', 'Aromatic nitrogen', 'Aromatic nitrogen']",3,0
+CCN(CC(=C)C)C(=O)C1CCNC1,32.3,62.3,"['Tertiary amine', 'Secondary amine', 'Carbonyl group']",2,1
+CC1=CC=C(C=C1)N(C2=CC=C(C=C2)C)C3=CC=C(C=C3)C=CC4=C(C=C(C=C4)C)OC,12.5,56.7,['Ether'],1,1
+CC(CCC1=CC=CC=C1)OC,9.2,32.1,['Ether'],0,1
+CC(C1=CC=C(C=C1)OCCN2CCCCC2)O,32.7,56.3,"['Tertiary amine', 'Ether', 'Alcohol']",1,2
+CC(C)OC1=CC=CC=C1NC2=NC(=CN=N2)NCCC3=CC(=CC=C3)OC,81.2,85.7,,5,2
+CC1=C(C=CC(=C1)NC(C)CC2CC2)O,32.3,56.3,"['Secondary amine', 'Alcohol']",1,1
+CC(C)(C(=O)C1=CC2=C(CCC3=CC=CC=C3C(=O)C2=O)C=C1)N(C)C,54.5,72.3,"['Tertiary amine', 'Carbonyl group', 'Carbonyl group', 'Carbonyl group']",1,3
+CC(C)CCC(=CC(C)O)C=O,37.3,36.2,"['Carbonyl group', 'Alcohol']",0,2
+COCCC1=C(C=CC=C1[N+](=O)[O-])C(=O)O,92.4,78.2,,1,5
+C1=CC=C(C=C1)CN(CC2=CC=CC=C2)CC(COC3=CC=CC=C3)O,32.7,78.2,"['Tertiary amine', 'Ether', 'Alcohol']",1,2
+CCNCC(C)NCC1COCCO1,42.5,66.2,,2,2
+CCCC=CC=CC(=O)C1=CC=CC=C1,17.1,18.2,['Carbonyl group'],0,1
+CCC1(CCN(C1)C(=O)C2C3CCCC3CN2)CC,32.3,62.3,"['Tertiary amine', 'Secondary amine', 'Carbonyl group']",2,1
+CC(C1=CC=CC=C1)NC2=NC3=CC=CC=C3N2C4=NC=NC(=N4)NC5=CC(=C(C(=C5)OC)OC)OC,108.0,102.3,,7,3
+C1=CN=C2C(=N1)C=NN=C2N,77.6,70.2,,5,0
+CC(C)C=CCC(C)CCCC(C)CCC=CCCC=CCCCC(=O)O,37.3,25.7,,0,2
+CC1CCCN(C1)C(=O)CN(C)CC2CCCNC2,35.6,70.2,"['Tertiary amine', 'Tertiary amine', 'Secondary amine', 'Carbonyl group']",3,1
+CC1(COCCN1C(=O)C2=CC(=C(C=C2)N3CCCCC3)[N+](=O)[O-])C,78.6,92.3,,3,4
+CC1=CC(=NC(=N1)C)N2CCC(C2)CNC,41.1,78.2,,4,0
+CCC1CCC(C1)(C2CCOC3(C2)CCOCC3)O,38.7,56.3,"['Ether', 'Ether', 'Alcohol']",0,3
+CCCC(CCCO)C1CCCCC1,20.2,20.1,['Alcohol'],0,1
+C1=CC(=CC=C1C2=CC(ON2)CC(=O)O)O,78.8,72.3,,1,4
+COCCOC1=CC2=C(C=C1)NC(C3C2C=CC3)C4=CC=CC=C4[N+](=O)[O-],76.3,85.7,,2,4
+CN1CCC(CC1)O[N+](=O)[O-],58.3,62.3,,2,3
+CC1=CC(=C(C2=C1C(=O)C(=CC3=CC=CC=C3)O2)CN4CCN(CC4)CCO)O,73.2,85.7,,2,4
+CCCCOC(CCC)ON1C(C2=CC=CC=C2C1(C)C)(C)C,21.7,56.3,"['Tertiary amine', 'Ether']",1,2
+CCCCC1CCC(CC1)C#CC2=NN=C(C=C2)CCC,25.8,12.3,,2,0
+CC1C2CCC2CCC1=O,17.1,12.0,['Carbonyl group'],0,1
+CC(CC1=CC(=C(C=C1)OC)N)NCC2=CC=CC=C2,47.3,62.3,"['Tertiary amine', 'Ether', 'Secondary amine', 'Primary amine']",2,1
+CC1=CC2=C(C(=C1)OC)OC(=C2)C(C(C)(C)C)O,42.6,56.3,"['Ether', 'Alcohol', 'Aromatic oxygen']",0,3
+CC(COC)OCC1=CC=C(C=C1)C#CCCO,38.7,62.3,"['Ether', 'Ether', 'Alcohol']",0,3
+CCC(CC)NC1=C(C=C(C=C1)C(=O)N(C)C)[N+](=O)[O-],78.2,85.3,,3,3
+CC(C)CN(CCC(=O)O)C(=O)CC(C=C)C1=CC=CC=C1,57.6,78.9,,1,3
+CC1=CCN(CC1)C(=O)CCOC2CCNCC2,41.6,70.2,"['Tertiary amine', 'Ether', 'Secondary amine', 'Carbonyl group']",2,2
+CCCCCCCCC1CCCN1,12.0,16.5,['Secondary amine'],1,0
+CC1CC(NC2=C1C=C(C(=C2)C3=CC=NC4=NC(=NN34)C5=CC=CO5)C)(C)C,68.3,92.3,,5,1
+CCC(C)C(=O)C1=C(C=C(C(=C1OC)C)OC)OC,44.8,56.3,"['Ether', 'Ether', 'Ether', 'Carbonyl group']",0,4
+C1=CC=C(C=C1)C2C(NNC2C3=CC=CC=C3)CO,44.3,62.3,['Alcohol'],2,1
+C1CC1CNC2=C(C=CC=C2N)C(=O)O,75.4,70.2,,2,2
+CC1=CC(=CC=C1)N2C=C(N=C2N)C,43.8,62.3,,3,0
+CC(C(=O)C1=CC=CC=C1)C(C2=CC=CC=C2)(C(C3=CC=CC=C3)(C(C)C(=O)C4=CC=CC=C4)O)O,74.6,85.7,"['Carbonyl group', 'Carbonyl group', 'Alcohol', 'Alcohol']",0,4
+C1C=CC(COCO1)OCCO,47.9,66.2,"['Ether', 'Ether', 'Alcohol']",0,4
+CCC1=C2CCC(C2(CCC1=O)C)O,37.3,36.2,"['Carbonyl group', 'Alcohol']",0,2
+CCCC1=C(C(=CC(=C1)C(=O)CCC(=O)O)OC)OC,72.8,72.3,,0,5
+CCCCCCCCCCCCC=CC1C(O1)CCCCOC2CCCCO2,31.0,36.8,"['Ether', 'Ether']",0,3
+CCCN1CC(NC(C1=O)(C)CC)(C)CNC(C)(C)C,44.4,78.2,,3,1
+CCC(CC)NC1=CC(=CC=C1)N2C=CC=C2,17.0,56.3,"['Secondary amine', 'Aromatic nitrogen', 'Aromatic nitrogen with single bond']",2,0
+C1=CC=C(C=C1)C(=O)C(=CC2=C(C=C(C=C2O)O)O)O,98.0,82.3,"['Carbonyl group', 'Alcohol', 'Alcohol', 'Alcohol', 'Alcohol']",0,5
+CC1(C(C(C2=C(O1)C=CC(=C2)OC)N3CC4=CC=CC=C4C3=O)O)C,59.0,82.3,"['Tertiary amine', 'Ether', 'Ether', 'Carbonyl group', 'Alcohol']",1,4
+CC(C)CC(C)OC1=CC=CC=C1C(C)[NH3+],36.9,56.3,"['Secondary amine', 'Quaternary ammonium']",1,1
+CC(CCCCN1CCC(C1)N2CCCC2)NC,18.5,56.3,"['Tertiary amine', 'Tertiary amine', 'Tertiary amine', 'Secondary amine']",3,0
+CC1=C(C=C(C=C1)C(C)(C)C2=CC(=C(C=C2)C)C3CCCCC3)C4CCCCC4,0.0,0.0,['No functional groups assigned.'],0,0
+CCCCC(CC)COCC1=C(C(=CC(=C1)C)N=NC2=CC=CC=C2N)O,80.2,82.3,"['Secondary imine', 'Ether', 'Alcohol', 'Primary amine']",3,2
+CN(C)C1=CC=CC(=C1OC2CC2)C(=O)O,49.8,72.3,,1,3
+CCC(CCCCCCC#CC#CCCCCCCCCCC(=O)O)C(=O)O,74.6,72.3,,0,4
+CC(C)(C)C1C(=O)NN=N1,53.8,36.0,,3,1
