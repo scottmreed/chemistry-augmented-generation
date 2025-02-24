@@ -1,0 +1,22 @@
+{
+  "prog.predictor": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+    ],
+    "signature": {
+      "instructions": "Using the given SMILES representation of a molecule, predict the numerical value of the topological surface area (TPSA). Analyze the structure to determine how different functional groups and bonding arrangements contribute to the polar properties and calculate the TPSA accordingly.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "smiles code for a molecule to be analyzed for predicting TPSA "
+        },
+        {
+          "prefix": "Answer:",
+          "description": "A text summary for how each identified group effects the TPSA value that MUST be followed by a list of numerical values (floats). Even if there is only a single value to return it must be a list. "
+        }
+      ]
+    }
+  }
+}

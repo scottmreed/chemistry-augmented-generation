@@ -1,0 +1,62 @@
+{
+  "prog.predictor": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC(CC1CCCCCN1)NCCC2=CC(=CC=C2)OC, ",
+        "answer": "{\"contributor_description\":\"The molecule contains several functional groups that contribute to the topological polar surface area (TPSA). The presence of nitrogen atoms in the amine and the ether oxygen increases the TPSA due to their polar nature. The aliphatic carbon chains and the aromatic ring contribute less to the TPSA. Overall, the TPSA is influenced significantly by the polar functional groups present in the structure.\",\"tpsa_numbers_list\":[45.2]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC1=C(C(=CC=C1)C(=O)NC2=CC=CC=C2N3CCCCC3)[N+](=O)[O-], ",
+        "answer": "85.4"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC1=C(C(=CC=C1)C(=O)NC2=CC=CC=C2N3CCCCC3)[N+](=O)[O-], ",
+        "error_answer_0": "Input should be an object:  (error type: model_type)",
+        "answer": "{\"contributor_description\":\"Sample contributor\",\"tpsa_numbers_list\":[78.4]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC=C1CC=C[CH+]1, ",
+        "answer": "{\"contributor_description\":\"The molecule contains a double bond and a positively charged carbon, which typically contributes to a lower TPSA due to the absence of polar functional groups. The TPSA value is influenced by the overall structure and the presence of heteroatoms, which are not present in this case.\",\"tpsa_numbers_list\":[0.0]}"
+      },
+      {
+        "augmented": true,
+        "question": "CC1(OC2C(C(OC2O1)C(=O)N=[N+]=[N-])OCOC)C",
+        "answer": "77.6"
+      },
+      {
+        "augmented": true,
+        "question": "CC(=C)C1CCC2C1(CC(C3C2CC=C4C3(CCC(=C4)OC)C)O)C",
+        "answer": "29.5"
+      },
+      {
+        "augmented": true,
+        "question": "CCC1=CC=C(C=C1)C2CC3=C(C(NC4=CC=CC=C4N3)C5=CC=CC6=CC=CC=C65)C(=O)C2",
+        "answer": "41.1"
+      },
+      {
+        "augmented": true,
+        "question": "C1C(O1)COC(C2=CC=CC=C2)OCC3CO3",
+        "answer": "43.5"
+      }
+    ],
+    "signature": {"instructions":"",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": ""
+        },
+        {
+          "prefix": "Answer:",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

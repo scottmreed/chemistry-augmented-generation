@@ -1,0 +1,62 @@
+{
+  "prog.predictor": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC=C1CC=C[CH+]1, which can be described as comprising: ['No functional groups assigned.']. Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. provide one value from the table for each of the 0 nitrogen atoms, and 0 oxygen atoms. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule CC=C1CC=C[CH+]1 has no functional groups that contribute to the topological polar surface area (TPSA). Therefore, the TPSA is solely based on the absence of polar atoms such as nitrogen and oxygen. The total TPSA value is minimal due to the lack of these contributing groups.\",\"tpsa_numbers_list\":[0.0, 0.0]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, C=CC1=CC=CC=C1.C1=CC(=O)C=CC1=O, which can be described as comprising: ['Carbonyl group', 'Carbonyl group']. Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. provide one value from the table for each of the 0 nitrogen atoms, and 2 oxygen atoms. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule contains two carbonyl groups, each contributing to the total TPSA value. The carbonyl group typically contributes a significant amount to the TPSA due to the presence of oxygen atoms, which are polar and can form hydrogen bonds. In this case, each carbonyl group contributes 20.0 to the TPSA value, leading to a total contribution from both groups.\",\"tpsa_numbers_list\":[20.0, 20.0]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CCC1=CC=C(C=C1)C2CC3=C(C(NC4=CC=CC=C4N3)C5=CC=CC6=CC=CC=C65)C(=O)C2, which can be described as comprising: ['Secondary amine', 'Carbonyl group']. Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. provide one value from the table for each of the 2 nitrogen atoms, and 1 oxygen atoms. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The secondary amine contributes 13.0 \u00c5\u00b2 to the TPSA value due to its nitrogen atom, while the carbonyl group contributes 20.0 \u00c5\u00b2 from its oxygen atom. The total TPSA is influenced by these functional groups, leading to a combined contribution of 26.0 \u00c5\u00b2 from the identified groups.\",\"tpsa_numbers_list\":[13.0,20.0]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC1=CC=CC(N1)C(=O)O, which can be described as comprising: None. Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. provide one value from the table for each of the 1 nitrogen atoms, and 2 oxygen atoms. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule contains 1 nitrogen atom and 2 oxygen atoms. The nitrogen contributes 10.0 to the TPSA, while each oxygen contributes 20.0, leading to a total TPSA value of 50.0.\",\"tpsa_numbers_list\":[10.0,20.0,20.0]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC1CCC2=CN=C(N=C12)NC3=CC=CC=C3, which can be described as comprising: None. Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. provide one value from the table for each of the 3 nitrogen atoms, and 0 oxygen atoms. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule contains three nitrogen atoms, each contributing to the total TPSA value. The contributions from the nitrogen atoms are as follows: the first nitrogen contributes 10.0, the second nitrogen contributes 10.0, and the third nitrogen contributes 10.0. There are no oxygen atoms present, contributing 0.0 to the TPSA value.\",\"tpsa_numbers_list\":[10.0,10.0,10.0]}"
+      },
+      {
+        "augmented": true,
+        "question": "CC(=C)C1CCC2C1(CC(C3C2CC=C4C3(CCC(=C4)OC)C)O)C",
+        "answer": "29.5"
+      },
+      {
+        "augmented": true,
+        "question": "C1CC(OC=C1)CNC2=CC3=C(C=C2)C4=CC=CC=C4C3",
+        "answer": "21.3"
+      },
+      {
+        "augmented": true,
+        "question": "C1CCOC(C1)COCC2=CC(=CC=C2)C(=O)NN",
+        "answer": "73.6"
+      }
+    ],
+    "signature": {
+      "instructions": "Analyze the provided SMILES code for a molecule and identify the contributing chemical groups responsible for the topological surface area (TPSA). Calculate the individual contributions to the TPSA from specified atoms such as nitrogen and oxygen, and present your findings in a JSON object format including a concise description of the contributors and how they impact the total TPSA value. Always return a list of the individual contributions in the field `tpsa_numbers_list`, even if it consists of a single value.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "smiles code for a molecule to be analyzed for predicting TPSA "
+        },
+        {
+          "prefix": "Answer:",
+          "description": "A text summary for how each identified group effects the TPSA value that MUST be followed by a list of numerical values (floats). Even if there is only a single value to return it must be a list. "
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "prog.predictor": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC=C1CC=C[CH+]1, Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule CC=C1CC=C[CH+]1 contains several groups that contribute to its topological polar surface area (TPSA). The presence of double bonds and a positively charged carbon atom influences the TPSA value. The double bonds typically do not contribute to the TPSA, while the positively charged carbon may slightly increase the TPSA due to its potential for interaction with polar solvents. Overall, the TPSA is influenced by the functional groups and their spatial arrangement.\",\"tpsa_numbers_list\":[0.0, 0.0, 0.0, 0.0, 0.0]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, C1C(O1)COC(C2=CC=CC=C2)OCC3CO3, Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule contains several functional groups that contribute to the total TPSA. The hydroxyl groups (\u2013OH) and ether linkages (\u2013O\u2013) significantly increase the TPSA due to their polar nature, while the aromatic ring contributes less due to its planar structure. The total TPSA is influenced by the presence of these polar groups, which enhance the molecule's ability to interact with water and biological membranes.\",\"tpsa_numbers_list\":[36.5]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, C1CNCC12CC3=C(N=C(N=C3O2)N)N, Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule contains several functional groups that contribute to the total TPSA value. The presence of nitrogen atoms in amine and imine forms, as well as the hydroxyl group, significantly increases the TPSA due to their polar nature. The cyclic structure also adds to the overall surface area. The contributions from each identified group are as follows: nitrogen atoms contribute 20.0, hydroxyl groups contribute 10.0, and the cyclic structure contributes 15.0, leading to a total TPSA of 45.0.\",\"tpsa_numbers_list\":[20.0,10.0,15.0,45.0]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC1=CC=C(C=C1)N2C(=C(N=N2)C(=O)NC3=CC=CC(=C3)C(C)O)C, Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule contains several functional groups that contribute to the total TPSA value. The presence of nitrogen atoms in the ring structure and the amide group increases the TPSA due to their polar nature. Additionally, the hydroxyl group contributes positively to the TPSA as it is a polar functional group. The overall TPSA is influenced by the arrangement of these groups and their respective contributions to the surface area.\",\"tpsa_numbers_list\":[72.4]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC1=C(C(=CC=C1)C(=O)NC2=CC=CC=C2N3CCCCC3)[N+](=O)[O-], Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule contains several functional groups that contribute to its topological polar surface area (TPSA). The presence of the amide group (C(=O)N) and the quaternary ammonium group ([N+](=O)[O-]) significantly increases the TPSA due to their polar nature. Additionally, the aromatic rings contribute to the overall TPSA but to a lesser extent compared to the polar functional groups. The total TPSA is influenced by the number of nitrogen and oxygen atoms, which are highly polar. Overall, the TPSA value reflects the balance of polar and non-polar contributions from the various groups present in the molecule.\",\"tpsa_numbers_list\":[85.4]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC1(OC2C(C(OC2O1)C(=O)N=[N+]=[N-])OCOC)C, Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule contains several functional groups that contribute to the total TPSA. The presence of hydroxyl (\u2013OH) groups, a carbonyl (C=O) group, and a nitrogen-containing group (N=N) significantly increases the TPSA value due to their polar nature. Each of these groups adds to the polar surface area, which is crucial for predicting the molecule's solubility and permeability. The total TPSA value is influenced by the arrangement and number of these functional groups.\",\"tpsa_numbers_list\":[78.4]}"
+      },
+      {
+        "augmented": true,
+        "question": "Help predict the numerical value of the topological surface area, TPSA, for a molecule described by the SMILES code, CC1=C(N=NC(=C1CN)N2CCC3=CC=CC=C32)C, Return a text summary in the field contributor_description and ALWAYS end with a LIST of numbers in the variable tpsa_numbers_list that shows how each group contributes to the total TPSA value for the molecule. tpsa_numbers_list must be a list even for a single value. Respond with a single JSON object. You MUST use this format: ",
+        "answer": "{\"contributor_description\":\"The molecule contains several functional groups that contribute to the total TPSA value. The presence of nitrogen atoms in the amine and imine groups increases the TPSA due to their polar nature. Additionally, the cyclic structures and the presence of oxygen atoms in the molecule also contribute positively to the TPSA. Overall, the combination of these groups results in a significant TPSA value.\",\"tpsa_numbers_list\":[62.4]}"
+      },
+      {
+        "augmented": true,
+        "question": "CC1CC(OC1C(C)CC(=O)O)CC(CC2C(CCC3C(O2)COC(O3)C4=CC=CC=C4)O)O",
+        "answer": "115.0"
+      }
+    ],
+    "signature": {
+      "instructions": "Given a molecule described by its SMILES code, analyze its constituent structural elements and predict the numerical value of the topological surface area (TPSA). Provide a detailed explanation in the field `contributor_description`, highlighting how each functional group contributes to the TPSA. Ensure to end your response with a LIST in the variable `tpsa_numbers_list`, showing the contribution of each relevant group to the total TPSA value. Format your response as a single JSON object.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "smiles code for a molecule to be analyzed for predicting TPSA "
+        },
+        {
+          "prefix": "Answer:",
+          "description": "A text summary for how each identified group effects the TPSA value that MUST be followed by a list of numerical values (floats). Even if there is only a single value to return it must be a list. "
+        }
+      ]
+    }
+  }
+}
