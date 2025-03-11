@@ -232,8 +232,8 @@ def train_or_load_mipro_model(data, model, model_name):
 
 def load_or_split_data(small_sample, large_sample):
     try:
-        train_df = pd.read_csv(os.path.join('tpsa_saved_data', 'tpsa_train_df.csv'), index=False)
-        test_df = pd.read_csv(os.path.join('tpsa_saved_data', 'tpsa_test_df.csv'), index=False)
+        train_df = pd.read_csv(os.path.join('tpsa_saved_data', 'tpsa_train_df.csv'))
+        test_df = pd.read_csv(os.path.join('tpsa_saved_data', 'tpsa_test_df.csv'))
 
     except:
         file_path = os.path.join('tpsa_saved_data', 'filtered_lipinski_data.csv')
