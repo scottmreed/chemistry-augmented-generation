@@ -12,7 +12,7 @@ def analyze_tpsa_differences(file_path, model, width):
     descriptive_tpsa_data['delta_tpsa'] = abs(
         descriptive_tpsa_data['calculated'] - descriptive_tpsa_data[f'{model}_pred'])
 
-    # Separate data into two groups based on delta TPSA threshold of > 1
+    # Separate data into two groups based on delta TPSA threshold of > 1. Change to 5 for SI figs
     group_greater_1 = descriptive_tpsa_data[descriptive_tpsa_data['delta_tpsa'] > 1]
     group_less_equal_1 = descriptive_tpsa_data[descriptive_tpsa_data['delta_tpsa'] <= 1]
 
