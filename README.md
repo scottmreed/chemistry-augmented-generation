@@ -2,6 +2,10 @@
 
 This repository contains tools and code to replicate the research presented in the study **"Augmented and Programmatically Optimized LLM Prompts Reduce Chemical Hallucinations."** The project demonstrates the enhancement of molecular property prediction accuracy by combining Retrieval-Augmented Generation (RAG) and Multiprompt Instruction Proposal Optimizer (MIPRO) with large language models (LLMs). Specifically, this repository focuses on predicting **topological polar surface area (TPSA)** for molecules.
 
+Publication: https://pubs.acs.org/doi/10.1021/acs.jcim.4c02322
+Video background: https://youtu.be/xQFuBjQx2Wg
+Video walkthrough: https://youtu.be/aZ0fLNFEgQU
+
 ## Features
 1. **Outlier Visualization**:  
    `plot_outliers.py` generates supporting information figures for analyzing outliers in TPSA prediction.
